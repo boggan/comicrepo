@@ -1,0 +1,36 @@
+#######################
+# ADMIN
+#######################
+- add admin panel
+- rename ComicGroups
+- choose "headline" comics for group display
+
+- add CBR/Z from admin panel
+- delete Comic / volumes
+
+- add possibility to chunk/split CBZ/R into smaller comics
+-- unpack collection archive
+-- choose coverpages
+-- rebundle into cbr/cbz
+
+- force re-scan
+- force clean-up
+
+#######################
+# SERVER
+#######################
+
+- have filesystem watch to know if new comics are being added
+- make sure cleanup routine is done on application start (or on close/SIGKILL if possible)
+- have dynamic API help
+
+#######################
+# CLIENT
+#######################
+
+- fix janky comic loading
+- have session to remember where you were for which comic
+- theme support (dark theme, light theme, etc...)
+- test on multiple screens
+- test caching / localstorage for loaded comic
+- have background image when browsing comic

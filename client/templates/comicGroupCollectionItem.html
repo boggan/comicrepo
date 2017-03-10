@@ -1,0 +1,14 @@
+<div class="comic-group">
+   <div class="comic-excerp-list">
+      <% if( get( 'comics' ).at(0) ) { %>
+         <img class="comic-excerp-1" src="<%= get( 'comics' ).at(0).get( 'thumbnail') %>" />
+      <% } %>
+      <% if( get( 'comics' ).at(1) ) { %>
+         <img class="comic-excerp-2" src="<%= get( 'comics' ).at(1).get( 'thumbnail') %>" />
+      <% } %>
+      <% if( get( 'comics' ).at(2) ) { %>
+         <img class="comic-excerp-3" src="<%= get( 'comics' ).at(2).get( 'thumbnail') %>" />
+      <% } %>
+   </div>
+   <span><%= get( 'name' ) %></span>
+</div>

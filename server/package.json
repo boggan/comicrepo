@@ -1,0 +1,19 @@
+{
+  "name": "ComicRepoServer",
+  "version": "0.0.1",
+  "description": "Server for Comic Repository Project",
+  "main": "Server.js",
+  "dependencies": {
+    "gm": "^1.22.0",
+    "mongoose": "^4.8.6",
+    "restify": "^2.8.3",
+    "unrar": "^0.1.0",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Lanteigne",
+  "license": "ISC"
+}
