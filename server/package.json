@@ -1,6 +1,6 @@
 {
   "name": "ComicRepoServer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Server for Comic Repository Project",
   "main": "Server.js",
   "dependencies": {
@@ -8,6 +8,7 @@
     "mongoose": "^4.8.6",
     "restify": "^2.8.3",
     "unrar": "^0.1.0",
+    "unrar.js": "^0.2.3",
     "unzip": "^0.1.11"
   },
   "devDependencies": {},

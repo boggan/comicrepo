@@ -34,3 +34,16 @@
 - test on multiple screens
 - test caching / localstorage for loaded comic
 - have background image when browsing comic
+
+#
+# Try Archivemount prototype
+# OSX Requirements: 
+# download and install https://osxfuse.github.io/
+# brew install archivemount
+#
+# Debian based requirements: 
+# apt-get install archivemount
+#
+# Other Systems: 
+# https://github.com/bramp/archivemount
+#

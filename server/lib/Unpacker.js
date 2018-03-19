@@ -9,6 +9,7 @@ var path = require("path"),
     fs = require("fs"),
     unzip = require('unzip'), // for zip compression (.CBZ)
     unrar = require('unrar'), // for Rar compression( .CBR )
+    unrarjs = require('unrar.js'), // pure javascript library to unpack rar archives
     Utils = require('./Utils');
 
 function cUnpacker() {
@@ -150,6 +151,17 @@ function cUnpacker() {
 
     //=============================================================================
     function _unrar(i_sFilePath, i_sOutputDirectory, i_oCallback) {
+        unrarjs.unrar(i_sFilePath, i_sOutputDirectory, function(i_oError, i_aFiles) {
+            if(i_oError) {
+                console.error("Unpacker::_unrar::Error unpacking ", i_sFilePath, " Error: ", err, i_aEntries);
+            }
+
+            i_oCallback(i_aFiles);
+        });
+    }
+
+    //=============================================================================
+    function _unrar_legacy(i_sFilePath, i_sOutputDirectory, i_oCallback) {
         var l_oRarFile = new unrar({
             path: i_sFilePath,
             arguments: ["--"]
